@@ -13,6 +13,7 @@ html, body {
   background: #272323;
 }
 header,
+.img-donate,
 .container,
 .top-footer {
   background: #FFF;
@@ -22,17 +23,21 @@ header,
 content h1 i {
   color: #FE110B;
 }
-.img-banner, 
+.img-banner,
+.donate,
 .img-product {
-  background: #4c4a4a;
+  background: #4C4A4A;
 }
 .btn-subs,
-content .simbol,
+.btn-donate,
+content .char,
 .btn-unduh,
 footer p {
   background: #FE110B;
 }
 .btn-subs,
+.btn-donate,
+.box-donate p,
 content h1, 
 .btn-unduh,
 footer p {
@@ -42,8 +47,9 @@ footer p {
 
 .icon:hover,
 .btn-subs:hover,
-.fa:hover {
-  opacity: 0.75;
+.btn-donate:hover,
+.fab:hover {
+  opacity: 0.5;
 }
 .off {
   pointer-events: none;
@@ -71,27 +77,25 @@ header {
   margin-right: auto;
   width: 165px;
 }
-.btn-subs {
+.btn-subs,
+.btn-donate {
   border: 0;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 50px;
   font-size: 12px;
   font-weight: bold;
 }
 
 content {
   min-height: calc(100vh - 50px);
-  display: block;/*
-  background: white;*/
 }
 .banner {
   margin: 20px;
 }
 .img-banner {
   display: block;
-  max-width: 100%;
-  min-height: 190px;
-  max-height: 100%;
+  width: 100%;
+  height: 190px;
   border-radius: 10px;
 }
 .banner h1 {
@@ -104,33 +108,54 @@ content {
 .banner p {
   margin: 0;
   font-size: 15px;
-  font-weight: 450;
   text-align: justify;
 }
-content .simbol {
+.donate {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.img-donate {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+.box-donate {
+  margin-left: 10px;
+}
+.box-donate p {
+  text-align: justify;
+  font-size: 13px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.btn-donate {
+  font-size: 10px;
+  padding: 8px 15px;
+  margin: 0;
+}
+content .char {
   width: 35px;
   height: 11px;
   border-radius: 50px;
-  margin-right: 10px;/*
-  background: red;*/
+  margin-right: 10px;
 }
 content h1 {
   margin: 15px 20px;
   font-size: 30px;
   display: flex;
-  align-items: center;/*
-  color: white;*/
+  align-items: center;
 }
 content h1 i {
   font-style: normal;
-  margin-left: 7px;/*
-  color: red;*/
+  margin-left: 7px;
 }
 .block {
   display: flex;
   margin: 0 12.5px;
-  padding-top: 30px;/*
-  border: 2px solid red;*/
+  padding-top: 30px;
 }
 .container {
   width: 100%;
@@ -139,8 +164,7 @@ content h1 i {
   position: relative;
   text-align: center;
   border: 0;
-  padding: 8px;/*
-  background: white;*/
+  padding: 8px;
 }
 .container:hover {
   opacity: 0.75;
@@ -159,8 +183,7 @@ content h1 i {
   max-width: 100%;
   position: relative;
   margin: auto;
-  border-radius: 15px;/*
-  background: red;*/
+  border-radius: 15px;
 }
 .box h3,
 .box h4 {
@@ -199,6 +222,7 @@ footer h3 {
   font-size: 16px;
   font-weight: normal;
   text-align: justify;
+  line-height: 1.25;
 }
 .fab {
   font-size: 27px;
@@ -207,7 +231,7 @@ footer h3 {
 footer p {
   width: 100%;
   margin: 0;
-  padding: 20px 0;
+  padding: 17.5px 0;
   font-size: 13px;
   text-align: center;
   font-weight: 500;
@@ -224,54 +248,39 @@ footer p {
     <div class="banner" onclick="Channel()'">
       <img class="img-banner off" src="file/banner.png" />
       <h1>Dexter Modz Official</h1>
-      <p>Dukung Admin Dengan Cara Subscribe Channel Youtube Dexter Modz. Silahkan Subscribe Karena Subscribe Itu Gratis.</p>
+      <p>Dukung Admin Dengan Cara Subscribe Channel Youtube <b>Dexter Modz</b>. Silahkan Subscribe Karena Subscribe Itu Gratis</p>
     </div>
-
-    <h1><div class="simbol"></div>Keygen<i>MLBB</i></h1>
     
-    <div class="block">
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
-        <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
-          <h3>Fakecez Keygen</h3>
-          <h4>Apk Key Generator for Fakecez Modz</h4>
-        </div>
-        <p class="btn-unduh">DOWNLOAD</p>
-      </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
-        <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
-          <h3>Dexter Keygen</h3>
-          <h4>Apk Key Generator for MLBB Mod</h4>
-        </div>
-        <p class="btn-unduh">DOWNLOAD</p>
-      </div>
-      <div class="container none">
+    <div class="donate">
+      <img class="img-donate off" src="file/product.png" />
+      <div class="box-donate">
+        <p>Jika punya rejeki lebih silahkan kirim donasi untuk Admin biar bisa beli kuota. Donasi berapapun Admin akan sangat berterima kasih</p>
+        <button class="btn-donate" onclick="location.href='https://saweria.co/dextermodz'">DONASI DISINI</button>
       </div>
     </div>
     
-    <h1><div class="simbol"></div>Maphack<i>MLBB</i></h1>
+    <h1><div class="char"></div>Maphack<i>MLBB</i></h1>
     
     <div class="block">
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-fakecez.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/fakecez.jpg" />
           <h3>Fakecez Modz</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-aamodz.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/aamodz.jpg" />
           <h3>AA Modz</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-ggwp.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/ggwp.jpg" />
           <h3>GGWP Modz</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
@@ -279,25 +288,25 @@ footer p {
       </div>
     </div>
     <div class="block">
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-xding.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/xding.jpg" />
           <h3>X-Ding Modz</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-furansu.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/furansu.jpg" />
           <h3>Furansu Modz</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-cyrax.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/cyrax.jpg" />
           <h3>Cyrax Modz</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
@@ -305,25 +314,25 @@ footer p {
       </div>
     </div>
     <div class="block">
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-tadahashi.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/tadahashi.jpg" />
           <h3>Tadahashi Modz</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-jhong.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/jhong.jpg" />
           <h3>Jhong Gaming</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-ugi.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/ugi.jpg" />
           <h3>UGI Modz</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
@@ -331,9 +340,9 @@ footer p {
       </div>
     </div>
     <div class="block">
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/maphack/mh-dexter.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/dexter.jpg" />
           <h3>Dexter Modz</h3>
           <h4>Maphack, Unlock Skin, Drone, Aim, Retri & More</h4>
         </div>
@@ -345,28 +354,28 @@ footer p {
       </div>
     </div>
     
-    <h1><div class="simbol"></div>Lulubox<i>MLBB</i></h1>
+    <h1><div class="char"></div>Lulubox<i>MLBB</i></h1>
     
     <div class="block">
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/lulubox/lbx-aa.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/lbx.jpg" />
           <h3>Lulubox Pro</h3>
           <h4>Apk Unlock All Skin MLBB</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/lulubox/lbx-era.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/lbx.jpg" />
           <h3>Lulubox Era</h3>
           <h4>Apk Unlock All Skin MLBB</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/lulubox/lbx-fakecez.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/lbx.jpg" />
           <h3>Lulubox Fakecez</h3>
           <h4>Apk Unlock All Skin MLBB</h4>
         </div>
@@ -374,20 +383,20 @@ footer p {
       </div>
     </div>
     
-    <h1><div class="simbol"></div>ML+<i>MLBB</i></h1>
+    <h1><div class="char"></div>ML+<i>MLBB</i></h1>
     
     <div class="block">
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/ml/ml-aa.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/ml.jpg" />
           <h3>ML+ AA Modz</h3>
           <h4>Apk Maphack MLBB No Floating</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/ml/ml-furansu.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/ml.jpg" />
           <h3>ML+ Furansu</h3>
           <h4>Apk Maphack MLBB No Floating</h4>
         </div>
@@ -397,20 +406,20 @@ footer p {
       </div>
     </div>
     
-    <h1><div class="simbol"></div>Drone View<i>MLBB</i></h1>
+    <h1><div class="char"></div>Drone View<i>MLBB</i></h1>
     
     <div class="block">
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/drone/drone-lib.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/mlbb.jpg" />
           <h3>Script Drone View</h3>
           <h4>Script Drone MLBB No Floating</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/drone/drone-apk.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/mlbb.jpg" />
           <h3>Apk Drone View</h3>
           <h4>Apk Drone MLBB With Floating</h4>
         </div>
@@ -420,28 +429,51 @@ footer p {
       </div>
     </div>
 
-    <h1><div class="simbol"></div>Link<i>Lainnya</i></h1>
+    <h1><div class="char"></div>Keygen<i>MLBB</i></h1>
     
     <div class="block">
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/keygen/kg-fakecez.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/fcez.jpg" />
+          <h3>Fakecez Keygen</h3>
+          <h4>Apk Key Generator for Fakecez Modz</h4>
+        </div>
+        <p class="btn-unduh">DOWNLOAD</p>
+      </div>
+      <div class="container" onclick="location.href='products/keygen/kg-dexter.html'">
+        <div class="box">
+          <img class="img-product off" src="file/dxtr.jpg" />
+          <h3>Dexter Keygen</h3>
+          <h4>Apk Key Generator for MLBB Mod</h4>
+        </div>
+        <p class="btn-unduh">DOWNLOAD</p>
+      </div>
+      <div class="container none">
+      </div>
+    </div>
+
+    <h1><div class="char"></div>Link<i>Lainnya</i></h1>
+    
+    <div class="block">
+      <div class="container" onclick="location.href='products/other/zarchiver.html'">
+        <div class="box">
+          <img class="img-product off" src="file/za.jpg" />
           <h3>ZArchiver Pro</h3>
           <h4>Apk ZArchiver Mod Premium</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/other/mt-manager.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/mt.jpg" />
           <h3>MT Manager Pro</h3>
           <h4>Apk MT Manager Mod Premium</h4>
         </div>
         <p class="btn-unduh">DOWNLOAD</p>
       </div>
-      <div class="container" onclick="location.href='product/mh-fakecez.html'">
+      <div class="container" onclick="location.href='products/other/vpn.html'">
         <div class="box">
-          <img class="img-product off" src="file/mlbb.jpeg" />
+          <img class="img-product off" src="file/vpn.jpg" />
           <h3>VPN MLBB</h3>
           <h4>Apk VPN Push Rank MLBB</h4>
         </div>
@@ -453,8 +485,7 @@ footer p {
   <footer>
     <div class="top-footer">
       <img onclick="location.href='https://benxidn.github.io/umble'" class="icon" src="file/icon.png" />
-      <!--<h2>DEXTER MODZ</h2>-->
-      <h3>Dexter Modz Merupakan Platform Penyedia Layanan Download Cheat Mobile Legends Gratis Terpercaya & Terbaik di Indonesia</h3>
+      <h3><b>Dexter Modz</b> Merupakan Platform Penyedia Layanan Download Cheat Mobile Legends Gratis Terpercaya & Terbaik di Indonesia</h3>
       <h2>Sosial Media Official</h2>
       <i class="fab fa-whatsapp fa-2x" onclick="location.href='https://chat.whatsapp.com/CloyeGRTXVB2axmDgI53JG'"></i>
       <i class="fab fa-telegram fa-2x" onclick="location.href='https://t.me/dextermodzz'"></i>
