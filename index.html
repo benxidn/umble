@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <title>Dexter Modz</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="file/logo.png" rel="shortcut icon">
@@ -13,7 +13,8 @@ html, body {
   background: #272323;
 }
 header,
-.container {
+.container,
+.top-footer {
   background: #FFF;
 }
 .banner h1,
@@ -28,13 +29,13 @@ content h1 i {
 .btn-subs,
 content .simbol,
 .btn-unduh,
-footer {
+footer p {
   background: #FE110B;
 }
 .btn-subs,
 content h1, 
 .btn-unduh,
-footer {
+footer p {
   color: #FFF;
 }
 
@@ -186,30 +187,31 @@ content h1 i {
 
 footer {
   margin-top: 50px;
-  display: block;
-  padding: 25px;
-  text-align: center;/*
-  background: red;*/
 }
-footer h3 {
-  margin: 0;
-  font-size: 15px;
+.top-footer {
+  padding: 20px;
 }
 footer h2 {
-  margin: 20px;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
 }
-.fa {
-  font-size: 35px;
-  margin: 10px;
-  margin-bottom: 20px;
+footer h3 {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: justify;
+}
+.fab {
+  font-size: 27px;
+  margin-right: 10px;
 }
 footer p {
+  width: 100%;
   margin: 0;
-  padding: 10px;
-  border-top: 1px solid #FFF;
-  padding: 20px;
-  padding-bottom: 0;
-  font-size: 15px;
+  padding: 20px 0;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
 }
 </style>
 <body>
@@ -450,13 +452,18 @@ footer p {
     
   </content>
   <footer>
-    <h3>Sosial Media</h3>
-    <h2>Hubungi Kami Jika Ada Pertanyaan!</h2>
-      <!--wa--><i onclick="location.href='https://chat.whatsapp.com/CloyeGRTXVB2axmDgI53JG'" class="fa">&#xf232;</i>
-      <!--tg--><i onclick="location.href='https://t.me/dextermodzz'" class="fa">&#xf2c6;</i>
-      <!--yt--><i onclick="Channel()" class="fa">&#xf167;</i>
-      <!--fb--><i onclick="location.href='https://www.facebook.com/dextermodzid'" class="fa">&#xf09a;</i>
-      <!--ig--><i onclick="location.href='https://www.instagram.com/dextermodzz'" class="fa">&#xf16d;</i>
+    <div class="top-footer">
+      <img onclick="location.href='https://benxidn.github.io/umble'" class="icon" src="file/icon.png" />
+      <!--<h2>DEXTER MODZ</h2>-->
+      <h3>Dexter Modz Merupakan Platform Penyedia Layanan Download Cheat Mobile Legends Gratis Terpercaya & Terbaik di Indonesia</h3>
+      <h2>Sosial Media Official</h2>
+      <i class="fab fa-whatsapp fa-2x" onclick="location.href='https://chat.whatsapp.com/CloyeGRTXVB2axmDgI53JG'"></i>
+      <i class="fab fa-telegram fa-2x" onclick="location.href='https://t.me/dextermodzz'"></i>
+      <i class="fab fa-youtube fa-2x" onclick="Channel()"></i>
+      <i class="fab fa-tiktok fa-2x" onclick="location.href='https://tiktok.com/@dextermodz'"></i>
+      <i class="fab fa-instagram fa-2x" onclick="location.href='https://www.instagram.com/dextermodzz'"></i>
+      <i class="fab fa-facebook fa-2x" onclick="location.href='https://www.facebook.com/dextermodzid'"></i>
+    </div>
     <p>Copyright © 2023, Dexter Modz</p>
   </footer>
 </body>
